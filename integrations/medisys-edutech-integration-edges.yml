@@ -1,0 +1,16 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/medisys-edutech/integrations
+- https://n8n.io/integrations/medisys-edutech/
+- https://composio.dev/toolkits/medisys-edutech
+- https://monid.ai/tools/medisys-edutech
+checked:
+- https://composio.dev/toolkits/medisys-edutech
+- https://monid.ai/tools/medisys-edutech
+- https://n8n.io/integrations/medisys-edutech/
+- https://zapier.com/apps/medisys-edutech/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

@@ -1,25 +1,65 @@
 aid: medisys-edutech
+
 name: MediSys EduTech
-description: 'MediSys EduTech is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by nea) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'MediSys EduTech, operating as MEdRC EduTech Ltd, is a pioneer in digitally enabling healthcare education. The Medical Education Research Centre for Educational Technologies provides a vast repository of standardized, peer‑reviewed e‑content across all healthcare domains. It offers seamless access to modular digital courseware, supporting students, professionals and lifelong learners, and connects providers and educators from major hospitals to remote clinics via a dedicated virtual network in India.'
+
 url: https://raw.githubusercontent.com/api-evangelist/medisys-edutech/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Education
+- Healthcare
+- E‑learning
+- DigitalHealth
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- nea
+
 common:
+- type: Hosts
+  url: hosts/medisys-edutech-hosts.yml
+- type: DomainSecurity
+  url: security/medisys-edutech-domain-security.yml
 - type: Website
   url: https://app.smarteach.com/medrc/default.html
+- type: Image
+  url: https://app.smarteach.com/medrc/images/images/medrc_logo.gif
+
+apis: []
+
+x-backed-by:
+- nea
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: The provider's website serves only HTML pages without any discoverable OpenAPI, AsyncAPI, GraphQL, gRPC, or WSDL specifications.
+  evidence:
+    - url: https://app.smarteach.com/openapi.json
+      status: 404
+    - url: https://app.smarteach.com/openapi.yaml
+      status: 404
+  checked: '2026-10-22'
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
